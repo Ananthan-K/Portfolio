@@ -1,0 +1,68 @@
+<!DOCTYPE html5>
+<html>
+<head>
+	<title>Snake</title>
+
+	<style type="text/css">
+		html {
+		text-align: center;
+		color: blue;
+		font-family: Helvetica, Arial, Helvetica, sans-serif;
+		}
+
+		#board div {
+		    background-color: black;
+		    border: 1px solid grey;
+		    box-sizing: border-box;
+		    float: left;
+		    width: 24px;
+		    height: 24px;
+		}
+
+		#board {
+		    width: calc(26 * 24px);
+		    margin: auto;
+		}
+	</style>
+</head>
+
+<body onload="initGame()">
+	<h1>Snake</h1>
+	<div id="board"></div>
+
+
+	<script>
+	var snakeX;
+	var snakeY;
+	var snakeDirection;
+	var snakeLength;
+	const board = [];
+	const boardWidth = 26, boardHeight = 16;
+
+	function initGame() {
+		const boardElement = document.getElementById('board');
+		for (var y = 0; y < boardHeight; ++y) {
+			var row = [];
+			for (var x = 0; x < boardWidth; ++x) {
+				var cell = {
+					snake: 0
+				};
+
+				cell.element = document.createElement('div');
+
+				boardElement.appendChild(cell.element);
+
+				row.push(cell);
+			}
+
+			board.push(cell);
+		}
+
+	}
+
+	</script>
+</body>
+
+
+
+</html>

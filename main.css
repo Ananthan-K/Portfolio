@@ -1,0 +1,57 @@
+/*.navbar {
+	position: fixed;
+	width: 100%;
+	top: 0;
+}*/
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: green;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+li a:hover {
+	background-color: #111
+}
+
+body {
+	font-family: "ltc-bodoni-175", Georgia, Times, Times New Roman, serif;
+	background-color: white;
+}
+
+.title {
+	font-size: 2em;
+	padding: 10px;
+	margin: 30px;
+	color: black;
+	text-align: center;
+	background-color: white;
+}
+
+.subsection {
+	padding: 10px;
+	margin: 30px;
+}
+
+#home {
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.title h2 {
+	margin-top: 0;
+}
